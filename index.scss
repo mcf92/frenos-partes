@@ -1,0 +1,9 @@
+$icon-font-path: "node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700,900');
+
+// custom
+@import 'source/styles/navbar';
+@import 'source/styles/banner';
