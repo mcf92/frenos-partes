@@ -1,5 +1,5 @@
 #navbar {
-  background: linear-gradient(314.08deg, #24426E 0%, #09111C 36.72%, #24426E 100%) !important;
+  background: transparent;
   padding: 20px 52px;
   .logo {
     width: 150px;
@@ -15,4 +15,12 @@
       }
     }
   }
+}
+
+.fixed {
+  background: radial-gradient(circle at left bottom, rgba(4, 28, 43, 100) 100%, rgba(13, 70, 107, 100) 100%) no-repeat !important;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
 }

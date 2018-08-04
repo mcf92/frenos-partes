@@ -1,11 +1,7 @@
-window.onscroll = function() {myFunction()};
-
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    $('#contents').classList.add("sticky")
+$(window).bind('scroll', function () {
+  if ($(window).scrollTop() > 90) {
+    $('#navbar').addClass('fixed');
   } else {
-    $('#contents').classList.remove("sticky");
+    $('#navbar').removeClass('fixed');
   }
-}
+});

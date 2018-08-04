@@ -1,10 +1,69 @@
 .home_banner {
   height: 100vh;
+  position: relative;
+  padding: 0 122px;
   font-family: 'Montserrat', sans-serif;
-  background: radial-gradient(circle at left bottom, rgba(0, 18, 30, .91) 0%, rgba(13, 72, 109, .97) 100%) no-repeat;
+  background-image: url('source/img/banner.png');
+  background-size: cover;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(circle at left bottom, rgba(0, 18, 30, .91) 0%, rgba(13, 72, 109, .97) 100%) no-repeat;
+  }
   h1 {
+    top: 40%;
+    position: absolute;
     font-weight: bold;
     font-size: 72px;
     color: #ffff;
+  }
+  hr {
+    width: 24%;
+    margin: 20px 0;
+    border-top: 10px solid $secondary-color;
+  }
+}
+
+.home-services {
+  &_item {
+    min-height: 50vh;
+    color: $white;
+    position: relative;
+    h2 {
+      position: absolute;
+      bottom: 35px;
+      left: 35px;
+      font-weight: 400;
+    }
+    hr {
+      width: 60%;
+      border: 1px solid $secondary-color;
+      margin: 10px 0;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: radial-gradient(circle at left bottom, rgba(0, 18, 30, .70) 0%, rgba(13, 72, 109, .81) 100%) no-repeat;
+    }
+  }
+  .option-1 {
+    background-image: url('source/img/home/servicio-1.png');
+  }
+  .option-2 {
+    background-image: url('source/img/home/servicio-2.png');
+  }
+  .option-3 {
+    background-image: url('source/img/home/servicio-3.png');
+  }
+  .option-4 {
+    background-image: url('source/img/home/servicio-4.png');
   }
 }
