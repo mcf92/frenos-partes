@@ -1,0 +1,14 @@
+.contact-form {
+  background-image: url('source/img/banner.png');
+  height: 70vh;
+  background-size: cover;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(circle at left bottom, rgba(0, 18, 30, .91) 0%, rgba(13, 72, 109, .97) 100%) no-repeat;
+  }
+}

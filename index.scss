@@ -10,14 +10,23 @@
 // base
 @import 'source/styles/base/reset';
 @import 'source/styles/base/spacing';
+@import 'source/styles/base/margin';
 @import 'source/styles/base/typography';
 @import 'source/styles/base/buttons';
 @import 'source/styles/base/icons';
+@import 'source/styles/base/container';
+@import 'source/styles/base/divider';
+@import 'source/styles/base/card';
 
 // custom
 @import 'source/styles/navbar';
-@import 'source/styles/banner';
-@import 'source/styles/mantenimiento';
+@import 'source/styles/home/home';
+@import 'source/styles/home/maintenance';
+@import 'source/styles/home/platform';
+@import 'source/styles/home/repair';
 
 // vendors
 @import 'source/styles/vendors/normalize';
+
+// components
+@import 'source/styles/component/contact-form';

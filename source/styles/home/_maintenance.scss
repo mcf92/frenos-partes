@@ -1,0 +1,15 @@
+.services-maintenance {
+  background-color: $white;
+  h3 {
+    margin-top: 0px;
+  }
+  .description {
+    transform: translateY(30%);
+  }
+  .card {
+    margin-top: 20px;
+    img {
+      width: 100%;
+    }
+  }
+}

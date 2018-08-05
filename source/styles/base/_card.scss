@@ -1,0 +1,9 @@
+.card {
+  border-radius: 4px;
+  overflow: hidden;
+  background: $white;
+  box-shadow: 0 3px 6px rgba(13, 72, 109, 0.17), 0 3px 6px rgba(13, 72, 109, 0.23);
+  .material-icons {
+    color: $secondary-color;
+  }
+}

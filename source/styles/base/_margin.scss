@@ -1,0 +1,90 @@
+/*------------------------------------*\
+   MARGIN
+\*------------------------------------*/
+.margin-auto,
+%margin-auto {
+  margin: auto;
+}
+.margin-left-auto,
+%margin-left-auto {
+  margin-left: auto;
+}
+.margin-right-auto,
+%margin-right-auto {
+  margin-right: auto;
+}
+
+$margin-custom: (
+  "without" :        0px,
+  "small" :          10px,
+  "medium" :         20px,
+  "large" :          40px,
+);
+
+$margin-size : (
+  "0"  :             0px,
+  "10" :             10px,
+  "15" :             15px,
+  "20" :             20px,
+  "25" :             25px,
+  "30" :             30px,
+  "35" :             35px,
+  "40" :             40px,
+  "45" :             45px,
+  "50" :             50px,
+  "55" :             55px,
+  "60" :             60px,
+  "65" :             65px,
+  "70" :             70px,
+  "75" :             75px,
+  "80" :             80px,
+  "85" :             85px,
+  "90" :             90px,
+  "95" :             95px,
+  "100" :            100px,
+);
+
+@each $name, $value in $margin-custom {
+  //CSS class
+  #{$css-class}margin--#{$name} {
+    margin: $value;
+  };
+  //silent class
+  @if $use-silent-classes == true {
+    #{$silent-class}margin--#{$name} {
+      margin: $value;
+    };
+  };
+};
+
+@each $name in $directions-breakpoints{
+  @each $size, $value in $margin-custom {
+    //CSS class
+    #{$css-class}margin--#{$name}-#{$size}{
+      margin-#{$name}: $value;
+
+    };
+    //Silent Class
+    @if $use-silent-classes == true {
+      #{$silent-class}margin--#{$name}-#{$size}{
+        margin-#{$name}: $value;
+      };
+    };
+  };
+};
+
+@each $name in $directions-breakpoints{
+  @each $size, $value in $margin-size {
+    //CSS class
+    #{$css-class}margin--#{$name}-#{$size}{
+      margin-#{$name}: $value;
+
+    };
+    //Silent Class
+    @if $use-silent-classes == true {
+      #{$silent-class}margin--#{$name}-#{$size}{
+        margin-#{$name}: $value;
+      };
+    };
+  };
+};
