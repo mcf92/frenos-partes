@@ -4,4 +4,6 @@ $(document).ready(function(){
             $('.service').addClass('slideInUp');
         }
     });
+
+    $('.descriptiono:in-viewport').css( 'background-color', 'red' );
 });

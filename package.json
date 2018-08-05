@@ -8,7 +8,7 @@
     "url": "git@github.com:camilaFarelo/parcel-example.git"
   },
   "scripts": {
-    "start": "parcel index.pug",
+    "start": "parcel build index.pug",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
