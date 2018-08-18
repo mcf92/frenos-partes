@@ -1,11 +1,12 @@
 // fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:100,300,400,500,700,900');
 
 //abstracts
 @import 'source/styles/abstracts/variables';
 
-@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'node_modules/bootstrap/scss/bootstrap';
 @import 'node_modules/material-icons/iconfont/material-icons.scss';
+
 
 // base
 @import 'source/styles/base/reset';

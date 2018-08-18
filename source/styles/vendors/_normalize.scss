@@ -103,6 +103,12 @@ a:hover {
   outline: 0;
 }
 
+button:active,
+button:hover,
+button:focus {
+  outline: 0;
+}
+
 // Text-level semantics
 // ==========================================================================
 

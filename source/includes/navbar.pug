@@ -1,17 +1,23 @@
 header
-  nav#navbar.navbar-fixed-top
-    a
-      img(src="./source/img/logo.png").logo
-    ul.nav.navbar-nav.navbar-right
-      li
-        a Home
-      li
-        a Conócenos
-      li
-        a Servicios
-      li
-        a Productos
-      li
-        a Cotización
-      li
-        a Contactanos
+  nav.navbar.fixed-top.navbar-expand-lg.navbar-light
+    a.navbar-brand(href='#')
+      .logo
+        img(src="./source/img/logo.png" width='100%')
+    button#new-drop.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+      span.material-icons menu
+    #navbarNav.collapse.navbar-collapse.justify-content-end
+      ul.navbar-nav.navbar-right
+        li.nav-item.active
+          a.nav-link(href='#')
+            | Home
+            span.sr-only (current)
+        li.nav-item
+          a.nav-link(href='#') Conócenos
+        li.nav-item
+          a.nav-link(href='#') Servicios
+        li.nav-item
+          a.nav-link(href='#') Productos
+        li.nav-item
+          a.nav-link(href='#') Cotización
+        li.nav-item
+          a.nav-link(href='#') Contactanos

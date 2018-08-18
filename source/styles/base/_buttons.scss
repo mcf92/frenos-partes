@@ -18,3 +18,21 @@
     text-decoration: none;
   }
 }
+
+.btn__color-secondary {
+  text-align: center;
+  background: $secondary-color;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 12px 12px;
+  color: $white;
+  border: none;
+  &:hover, &:focus {
+    background: $secondary-color;
+    color: $white;
+  }
+}
+
+.btn__full-width {
+  width: 100%;
+}

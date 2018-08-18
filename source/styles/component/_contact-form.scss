@@ -1,5 +1,5 @@
 .contact-form {
-  background-image: url('source/img/banner.png');
+  background-image: url('source/img/contactForm/contact-form.png');
   height: 70vh;
   background-size: cover;
   &:before {
@@ -10,5 +10,57 @@
     bottom: 0;
     left: 0;
     background: radial-gradient(circle at left bottom, rgba(0, 18, 30, .91) 0%, rgba(13, 72, 109, .97) 100%) no-repeat;
+  }
+  &_content {
+    position: relative;
+    max-width: 693px;
+    margin: 0 auto;
+    padding-top: 60px;
+    p {
+      font-weight: 100;
+    }
+  }
+  &_logo {
+    position: absolute;
+    width: 80px;
+    left: calc(50% - 49.5px);
+    top: -16%;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 40px auto;
+    .material-icons {
+      position: absolute;
+      bottom: 12px;
+    }
+  }
+
+  .form-control {
+    background-color: transparent;
+    border-bottom: 3px solid #ED3E4B !important;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    color: $white;
+    font-weight: 100;
+    padding: 16px 30px;
+    height: 40px;
+    font-size: 14px;
+    font-family: $font-family-serif;
+
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: $white;
+      opacity: 1; /* Firefox */
+      font-weight: 100;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: $white;
+      font-weight: 100;
+    }
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: $white;
+      font-weight: 100;
+    }
   }
 }

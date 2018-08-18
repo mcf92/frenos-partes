@@ -1,7 +1,7 @@
 $(window).bind('scroll', function () {
   if ($(window).scrollTop() > 90) {
-    $('#navbar').addClass('fixed');
+    $('.navbar').addClass('fixed');
   } else {
-    $('#navbar').removeClass('fixed');
+    $('.navbar').removeClass('fixed');
   }
 });

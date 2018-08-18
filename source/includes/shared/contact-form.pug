@@ -1,2 +1,22 @@
 .contact-form.col-lg-12.col-sm-12.col-xs-12
-  h3 Contactanos
+  img(src="source/img/logo-icon.png" alt="Frenos Y Partes logo" class="contact-form_logo")
+  .contact-form_content
+    h3.white-color-text.montserrat-font-family.text-align_center Contáctanos
+    p.white-color-text.text-font-size_18.text-align_center Para mayor información sobre servicios y productos no dudes contactarnos
+    form
+      .form-row
+        .col-md-12.margin--bottom-medium
+          span.white-color-text.material-icons person
+          input.form-control.is-valid(type='text' placeholder='Nombre' required='')
+        .col-md-12.margin--bottom-medium
+          span.white-color-text.material-icons local_phone
+          input.form-control.is-valid(type='text' placeholder='Teléfono' required='')
+        .col-md-12.margin--bottom-medium
+          span.white-color-text.material-icons mail
+          input.form-control.is-valid(type='text' placeholder='Email' required='')
+        .col-md-12
+          label En cual de nuestros servicios esta interesado?
+          select.form-control
+            option Selecciona una opción
+      .col-md-12
+        button.btn__color-secondary.btn__full-width(type='submit') Enviar

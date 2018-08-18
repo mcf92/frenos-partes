@@ -1,17 +1,67 @@
-#navbar {
+.navbar {
   background: transparent;
   padding: 20px 52px;
   .logo {
     width: 150px;
   }
-  .navbar-nav {
-    a {
-      color: #ffff;
-      font-family: 'Roboto', sans-serif;
-      text-transform: uppercase;
-      cursor: pointer;
-      &:hover {
-        background-color: transparent;
+  &-nav {
+    .nav-item {
+      .nav-link {
+        color: #ffff !important;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 3px;
+          background-color: $secondary-color;
+          bottom: 0;
+          left: 0;
+          transform: scale(0);
+          transition: transform .5s ease;
+        }
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+    .nav-item.active {
+      .nav-link {
+        &:after {
+          content: "";
+          transform: scale(1);
+        }
+      }
+    }
+  }
+  //collapse buttons
+  &-toggler {
+    border: none;
+    color: $white !important;
+    transition: color .2s ease;
+    &:hover {
+      color: $grey !important;
+    }
+  }
+  //Media
+  @media screen and (max-width: 991px) {
+    .navbar-collapse {
+      margin: 0 -52px;
+      padding: 0 52px;
+      background: radial-gradient(circle at left bottom, #041c2b 20%, #0d466b 50%) no-repeat !important;
+      .navbar-nav {
+        padding: 25px 0;
+      }
+      .nav-item.active {
+        .nav-link {
+          &:after {
+            content: "";
+            transform: scale(0);
+          }
+        }
       }
     }
   }
@@ -19,8 +69,4 @@
 
 .fixed {
   background: radial-gradient(circle at left bottom, #041c2b 20%, #0d466b 50%) no-repeat !important;
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  width: 100%;
 }
