@@ -84,3 +84,18 @@ $padding-size : (
       };
     };
 };
+
+@media screen and (max-width: 991px) {
+  .padding-top-without_xs {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: $screen-large) {
+  .padding-top-20_lg {
+    padding-top: 20px;
+  }
+  .padding-top-40_lg {
+    padding-top: 40px;
+  }
+}

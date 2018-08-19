@@ -18,6 +18,7 @@
 @import 'source/styles/base/container';
 @import 'source/styles/base/divider';
 @import 'source/styles/base/card';
+@import 'source/styles/base/layout';
 
 // custom
 @import 'source/styles/navbar';
@@ -31,3 +32,5 @@
 
 // components
 @import 'source/styles/component/contact-form';
+@import 'source/styles/component/footer';
+@import 'source/styles/component/owl-carousel';

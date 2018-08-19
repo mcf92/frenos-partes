@@ -1,20 +1,24 @@
 section.home_banner
   h1 Soluciones integrales <br/> al Parque automotor
     hr
-section.home-services.col-lg-12.col-sm-12.col-xs-12.padding--without
-  .col-lg-3.col-sm-3.col-xs-6.home-services_item.option-1
-    h2.animated.service.delay-2s Servicio <br/> <b>24/7</b>
-      hr.animated.service.delay-2s
-  .col-lg-3.col-sm-3.col-xs-6.home-services_item.option-2
-    h2.animated.service.delay-2s Venta de <br/> <b>Repuestos</b>
-      hr.animated.service.delay-2s
-  .col-lg-3.col-sm-3.col-xs-6.home-services_item.option-3
-    h2.animated.service.delay-2s Servicio de <br/> <b>Mantenimiento</b>
-      hr.animated.service.delay-2s
-  .col-lg-3.col-sm-3.col-xs-6.home-services_item.option-4
-    h2.animated.service.delay-2s Servicio de <br/> <b>Desvares</b>
-      hr.animated.service.delay-2s
+.position-relative
+  button.home-services_next-btn.btn-rounded-icon_outline-white.position-absolute
+    span.material-icons arrow_forward
+  .home-services.home-services_owl-carousel.owl-carousel.owl-theme
+    .home-services_item.option-1
+      h2.animated.service.delay-2s Servicio <br/> <b>24/7</b>
+        hr.animated.service.delay-2s
+    .home-services_item.option-2
+      h2.animated.service.delay-2s Venta de <br/> <b>Repuestos</b>
+        hr.animated.service.delay-2s
+    .home-services_item.option-3
+      h2.animated.service.delay-2s Servicio de <br/> <b>Mantenimiento</b>
+        hr.animated.service.delay-2s
+    .home-services_item.option-4
+      h2.animated.service.delay-2s Servicio de <br/> <b>Desvares</b>
+        hr.animated.service.delay-2s
 include ./../../includes/home/maintenance.pug
 include ./../../includes/home/platform.pug
 include ./../../includes/home/repair.pug
 include ./../../includes/shared/contact-form.pug
+include ./../../includes/shared/footer.pug

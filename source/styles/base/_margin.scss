@@ -88,3 +88,12 @@ $margin-size : (
     };
   };
 };
+
+@media screen and (min-width: $screen-large) {
+  .margin-top-20_lg {
+    margin-top: 20px;
+  }
+  .margin-top-40_lg {
+    margin-top: 40px;
+  }
+}

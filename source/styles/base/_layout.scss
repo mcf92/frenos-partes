@@ -1,0 +1,21 @@
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.phone-view {
+  display: initial;
+  @media screen and (min-width: $screen-medium) {
+    display: none;
+  }
+}
+
+.desktop-view {
+  display: none;
+  @media screen and (min-width: $screen-medium) {
+    display: initial;
+  }
+}

@@ -1,8 +1,9 @@
 .navbar {
   background: transparent;
-  padding: 20px 52px;
+  padding: 10px 52px;
   .logo {
     width: 150px;
+    img {width: 70%;}
   }
   &-nav {
     .nav-item {
@@ -63,6 +64,18 @@
           }
         }
       }
+    }
+  }
+
+  @media screen and (min-width: $screen-medium) {
+    .logo {
+      img {width: 70%;}
+    }
+  }
+  @media screen and (min-width: $screen-large) {
+    padding: 20px 52px;
+    .logo {
+      img {width: 100%;}
     }
   }
 }

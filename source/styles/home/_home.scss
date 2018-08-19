@@ -1,7 +1,7 @@
 .home_banner {
   height: 100vh;
   position: relative;
-  padding: 0 122px;
+  padding: 0 54px;
   font-family: 'Montserrat', sans-serif;
   background-image: url('source/img/banner.png');
   background-size: cover;
@@ -18,7 +18,7 @@
     top: 40%;
     position: absolute;
     font-weight: bold;
-    font-size: 72px;
+    font-size: 25px;
     color: #ffff;
   }
   hr {
@@ -26,11 +26,23 @@
     margin: 20px 0;
     border-top: 10px solid $secondary-color;
   }
+
+  @media screen and (min-width: $screen-small) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  @media screen and (min-width: $screen-large) {
+    padding: 0 122px;
+    h1 {
+      font-size: 72px;
+    }
+  }
 }
 
 .home-services {
   &_item {
-    min-height: 50vh;
+    min-height: 40vh;
     color: $white;
     position: relative;
     h2 {
@@ -38,6 +50,7 @@
       bottom: 35px;
       left: 35px;
       font-weight: 400;
+      font-size: 1.5rem;
     }
     hr {
       width: 60%;
@@ -54,16 +67,36 @@
       background: radial-gradient(circle at left bottom, rgba(0, 18, 30, .70) 0%, rgba(13, 72, 109, .81) 100%) no-repeat;
     }
   }
+  &_next-btn{
+    right: 5%;
+    top: 10%;
+    display: initial;
+    @media screen and (min-width: 1000px) {
+      display: none;
+    }
+  }
   .option-1 {
     background-image: url('source/img/home/servicio-1.png');
+    background-repeat: no-repeat;
   }
   .option-2 {
     background-image: url('source/img/home/servicio-2.png');
+    background-repeat: no-repeat;
   }
   .option-3 {
     background-image: url('source/img/home/servicio-3.png');
+    background-repeat: no-repeat;
   }
   .option-4 {
     background-image: url('source/img/home/servicio-4.png');
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-width: $screen-small) {
+    &_item {
+      min-height: 50vh;
+      h2 {
+        font-size: 2rem;
+      }
+    }
   }
 }

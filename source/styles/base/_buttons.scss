@@ -36,3 +36,18 @@
 .btn__full-width {
   width: 100%;
 }
+
+.btn-rounded-icon_outline-white {
+  background-color: transparent;
+  border: 1px solid $white;
+  border-radius: 50px;
+  color: $white;
+  padding: 0;
+  width: 26px;
+  height: 26px;
+  z-index: 3;
+  span {
+    font-size: 15px;
+    vertical-align: middle;
+  }
+}

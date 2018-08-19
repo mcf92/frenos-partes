@@ -2,11 +2,11 @@
   color: $primary-color;
 }
 
-.grey-color-text {
+.text-color_grey {
   color: $grey;
 }
 
-.white-color-text {
+.text-color_white {
   color: $white;
 }
 
@@ -24,4 +24,12 @@
 
 .text-font-size_18 {
   font-size: $font-size-h4;
+}
+
+.text-font-size_14 {
+  font-size: $font-size-h5;
+}
+
+.text-weight_thin {
+  font-weight: 100;
 }

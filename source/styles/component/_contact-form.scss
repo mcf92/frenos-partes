@@ -1,7 +1,7 @@
 .contact-form {
   background-image: url('source/img/contactForm/contact-form.png');
-  height: 70vh;
   background-size: cover;
+  position: relative;
   &:before {
     content: '';
     position: absolute;
@@ -24,7 +24,7 @@
     position: absolute;
     width: 80px;
     left: calc(50% - 49.5px);
-    top: -16%;
+    top: -7%;
   }
 
   form {
@@ -36,7 +36,7 @@
     }
   }
 
-  .form-control {
+  input.form-control {
     background-color: transparent;
     border-bottom: 3px solid #ED3E4B !important;
     border: none;
@@ -62,5 +62,61 @@
       color: $white;
       font-weight: 100;
     }
+  }
+
+  .custom-select{
+    &-opener {
+      border-radius: 57px;
+      transition: all .4s;
+      background-color: $secondary-color;
+      color: $white;
+      font-weight: 100;
+      padding: 15px;
+      outline: none;
+      position: relative;
+    }
+    &-panel {
+      background-color: $secondary-color;
+      border-radius: 0 0 10px 10px;
+      color: $white;
+    }
+    &-option {
+      cursor: pointer;
+    }
+  }
+  .is-open {
+    .custom-select-opener {
+      border-radius: 10px 10px 0 0;
+      background-color: $secondary-color;
+      color: $white;
+      font-weight: 100;
+      padding: 15px;
+    }
+  }
+  .custom-select-option.has-focus {
+    background-color: $primary-color-hover;
+  }
+  .custom-select-option.is-selected::before {
+    content: "";
+    padding: 0;
+  }
+  .form-custom-select {
+    position: relative;
+    .select-icon {
+      right: 20px;
+      bottom: 25%;
+      cursor: pointer;
+    }
+  }
+}
+
+.parsley {
+  &-errors-list {
+    position: absolute;
+    color: $secondary-color;
+    font-size: 12px;
+    font-weight: 100;
+    list-style: none;
+    right: 5px;
   }
 }

@@ -7,9 +7,27 @@
     transform: translateY(30%);
   }
   .card {
-    margin-top: 20px;
     img {
       width: 100%;
+    }
+  }
+  @media screen and (max-width: 1280px) {
+    .description {
+      transform: translateY(0%);
+    }
+    .card {
+      h5 {
+        font-size: 14px;
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .card {
+      margin-top: 0;
+      margin-bottom: 25px;
+      h5 {
+        font-size: 14px;
+      }
     }
   }
 }
