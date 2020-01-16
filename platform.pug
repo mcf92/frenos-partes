@@ -1,0 +1,14 @@
+include ./source/mixin/head.pug
+
+doctype html
+html
+  +head('Frenos & Partes - Plataforma', 'Con la plataforma de frenos y partes podras conocer el estado de tus vehículos en tiempo real')
+  body
+    .platform-page.container-fluid.padding--without
+      include ./source/includes/shared/loader.pug
+      include ./source/includes/navbar.pug
+      include ./source/includes/platform/landing.pug
+      include ./source/includes/platform/getUser.pug
+      include ./source/includes/shared/contact-form.pug
+      include ./source/includes/shared/footer.pug
+    script(src="index.js")

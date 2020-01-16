@@ -1,0 +1,11 @@
+include ./source/mixin/head.pug
+
+doctype html
+html
+  +head('Frenos & Partes - Planes', 'Conoce los planes que Frenos Y partes tiene para ofrecerte para el cuidado de tus vehículos')
+  body
+    include ./source/includes/shared/loader.pug
+    include ./source/includes/navbar.pug
+    include ./source/includes/planes/planes.pug
+    include ./source/includes/shared/footer.pug
+    script(src="index.js")

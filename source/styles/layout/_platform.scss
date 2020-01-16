@@ -1,0 +1,100 @@
+.platform-page {
+  .navbar {
+    background: radial-gradient(circle at left bottom, #041c2b 20%, #0d466b 50%) no-repeat !important;
+  }
+
+  &-home {
+    margin-top: 84px;
+    text-align: center;
+    background: radial-gradient(circle at left bottom, rgba(213, 213, 213, 0.26) 0%, rgba(255, 255, 255, 0) 100%) no-repeat;
+    h1 {
+      font-size: 35px;
+    }
+    @media screen and (min-width: $screen-large) {
+      padding-top: 20px;
+      padding-left: 0;
+      h1 {
+        font-size: 45px;
+      }
+    }
+  }
+
+  &-benefits {
+    text-align: left;
+    padding: 50px 50px 50px 70px;
+    .benefits-item-02 {
+      padding-left: 0px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 70px;
+    }
+    h4 {
+      position: relative;
+      padding-bottom: 50px;
+      margin: 0px;
+      &:before {
+        content: url('source/img/platform/benefits.png');
+        position: absolute;
+        left: -48px;
+        bottom: 3px;
+        z-index: -1;
+      }
+    }
+    p {
+      font-size: 20px;
+      font-weight: 300;
+    }
+    @media screen and (min-width: $screen-medium) {
+      padding-right: 75px;
+      .benefits-item-02 {
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+
+.platform-user {
+  padding: 80px 75px 80px;
+  p {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  &-text {
+    transform: none;
+    margin-bottom: 50px;
+  }
+  &-benefits {
+    list-style: none;
+    padding: 0;
+    font-weight: 300;
+    font-size: 16px;
+    li {
+      margin-bottom: 16px;
+      position: relative;
+      div {
+        padding-left: 24px;
+      }
+    }
+    &-marker {
+      background: #e84148;
+      width: 10px;
+      height: 4px;
+      display: inline-block;
+      margin: 10px 10px 4px 0;
+      position: absolute;
+    }
+  }
+  img {
+    width: 78%;
+  }
+  @media (min-width: $screen-large) {
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+include ./source/mixin/head.pug
+
+doctype html
+html
+  +head('Frenos & Partes - Conócenos', 'Frenos Y partes cuenta con la mejor mano de obra y repuestos para tus vehículos.')
+  body
+    .about-us.container-fluid.padding--without
+      include ./source/includes/shared/loader.pug
+      include ./source/includes/navbar.pug
+      include ./source/includes/aboutUs/landing.pug
+      include ./source/includes/aboutUs/ourHistory.pug
+      include ./source/includes/aboutUs/philoshophy.pug
+      include ./source/includes/shared/contact-form.pug
+      include ./source/includes/shared/footer.pug
+    script(src="index.js")

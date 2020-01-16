@@ -1,0 +1,76 @@
+.products--list
+  include ./filters.pug
+  .grid.margin--bottom-70
+    include ./list.pug
+    each option in frenosDeAire
+      .grid-item.padding--small.frenosDeAire(data-category="frenosDeAire")
+        .card
+          if option.img
+            img.card-img-top(src='source/img/products/frenosDeAire/' + option.img)
+          .card-body
+            h6.card-title=option.name
+            p.text-color_grey-light.text-font-size_12 Categoria: Frenos de Aire
+    each option in frenosLiquidos
+      .grid-item.padding--small.frenosLiquidos(data-category="frenosLiquidos")
+        .card
+          if option.img
+            img.card-img-top(src='source/img/products/frenosLiquidos/' + option.img)
+          .card-body
+            h6.card-title=option.name
+            p.text-color_grey-light.text-font-size_12 Categoria: Frenos de Liquido
+    each option in sistemaDeRodamiento
+      .grid-item.padding--small.sistemaDeRodamiento(data-category="sistemaDeRodamiento")
+        .card
+          if option.img
+            img.card-img-top(src='source/img/products/sistemaDeRodamiento/' + option.img)
+          .card-body
+            h6.card-title=option.name
+            p.text-color_grey-light.text-font-size_12 Categoria: Sistema de Rodamiento
+    each option in sistemaDeDireccion
+      .grid-item.padding--small.sistemaDeDireccion(data-category="sistemaDeDireccion")
+        .card
+          if option.img
+            img.card-img-top(src='source/img/products/sistemaDeDireccion/' + option.img)
+          .card-body
+            h6.card-title=option.name
+            p.text-color_grey-light.text-font-size_12 Categoria: Sistema de Dirección
+    each option in sistemaDeSuspension
+      .grid-item.padding--small.sistemaDeSuspension
+        .card
+          if option.img
+            img.card-img-top(src='source/img/products/sistemaDeSuspension/' + option.img)
+          .card-body
+            h6.card-title=option.name
+            p.text-color_grey-light.text-font-size_12 Categoria: Sistema de Suspensión
+    each option in sistemaElectrico
+      .grid-item.padding--small.sistemaElectronico
+        .card
+          if option.img
+            img.card-img-top(src='source/img/products/sistemaElectronico/' + option.img)
+          .card-body
+            h6.card-title=option.name
+            p.text-color_grey-light.text-font-size_12 Categoria: Sistema Electronico
+    each option in sistemaDeMotor
+      .grid-item.padding--small.sistemaMotor
+        .card
+          if option.img
+            img.card-img-top(src='source/img/products/sistemaMotor/' + option.img)
+          .card-body
+            h6.card-title=option.name
+            p.text-color_grey-light.text-font-size_12 Categoria: Sistema De Motor
+    each option in sistemaDeEmbrague
+      .grid-item.padding--small.sistemaDeEmbrague
+        .card
+          if option.img
+            img.card-img-top(src='source/img/products/sistemaDeEmbrague/' + option.img)
+          .card-body
+            h6.card-title=option.name
+            p.text-color_grey-light.text-font-size_12 Categoria: Sistema De Embrague
+    each option in otros
+      .grid-item.padding--small.otros
+        .card
+          if option.img
+            img.card-img-top(src='source/img/products/otros/' + option.img)
+          .card-body
+            h6.card-title=option.name
+            p.text-color_grey-light.text-font-size_12 Categoria: Otros

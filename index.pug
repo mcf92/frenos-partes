@@ -1,11 +1,10 @@
+include ./source/mixin/head.pug
+
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='index.scss')
-    link(rel='stylesheet', href='node_modules/animate.css/animate.min.css')
-    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900')
+  +head('Frenos & Partes', 'Ofrecemos las mejores Soluciones integrales al Parque automotor para tus vehículos')
   body
+    include ./source/includes/shared/loader.pug
     include ./source/includes/navbar.pug
     include ./source/layout/home/banner.pug
     script(src="index.js")

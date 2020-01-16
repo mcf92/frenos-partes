@@ -1,0 +1,49 @@
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.phone-view {
+  display: initial;
+  @media screen and (min-width: $screen-medium) {
+    display: none;
+  }
+}
+
+.display-flex {
+  display: flex;
+}
+
+.desktop-view {
+  display: none;
+  @media screen and (min-width: $screen-medium) {
+    display: initial;
+  }
+}
+
+.justify-content-stretch {
+  -ms-flex-pack: stretch !important;
+  justify-content: stretch !important;
+}
+
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content--space-between {
+  -ms-flex-pack: space-between !important;
+  justify-content: space-between !important;
+}
+
+.justify-content--center {
+  display: flex;
+  justify-content: center;
+}
+
+.align-items--center {
+  align-items: center;
+  display: flex;
+}

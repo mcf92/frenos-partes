@@ -1,9 +1,51 @@
-$icon-font-path: "node_modules/bootstrap-sass/assets/fonts/bootstrap/";
-@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
-
 // fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:100,300,400,500,700,900');
+
+//abstracts
+@import 'source/styles/abstracts/variables';
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/material-icons/iconfont/material-icons.scss';
+
+
+// base
+@import 'source/styles/base/reset';
+@import 'source/styles/base/spacing';
+@import 'source/styles/base/margin';
+@import 'source/styles/base/typography';
+@import 'source/styles/base/buttons';
+@import 'source/styles/base/icons';
+@import 'source/styles/base/container';
+@import 'source/styles/base/divider';
+@import 'source/styles/base/card';
+@import 'source/styles/base/layout';
+@import 'source/styles/base/animations';
+@import 'source/styles/base/form';
+@import 'source/styles/base/background';
 
 // custom
 @import 'source/styles/navbar';
-@import 'source/styles/banner';
+@import 'source/styles/home/home';
+@import 'source/styles/home/maintenance';
+@import 'source/styles/home/platform';
+@import 'source/styles/home/repair';
+
+// vendors
+@import 'source/styles/vendors/normalize';
+
+// components
+@import 'source/styles/component/contact-form';
+@import 'source/styles/component/footer';
+@import 'source/styles/component/owl-carousel';
+@import 'source/styles/component/loading';
+@import 'source/styles/component/clients';
+
+// layout
+@import 'source/styles/layout/aboutus';
+@import 'source/styles/layout/platform';
+@import 'source/styles/layout/planes';
+@import 'source/styles/layout/products';
+
+body {
+  overflow-x: hidden !important;
+}

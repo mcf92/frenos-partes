@@ -1,0 +1,92 @@
+.clients {
+  text-align: center;
+  padding: 25px;
+  justify-content: center;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &--link {
+    align-items: center;
+    display: flex;
+    margin-right: 32px;
+    .aconstruir {
+      width: 50px;
+    }
+    img {
+      height: auto;
+      width: 70px;
+      height: auto;
+      vertical-align: top;
+    }
+  }
+  &--container {
+    display: flex;
+    flex-direction: column;
+  }
+  &--title {
+    display: block;
+    font-size: 18px;
+    line-height: 18px;
+    white-space: nowrap;
+    margin: 0 0 25px;
+  }
+  .column__one,
+  .column__second  {
+    display: flex;
+    justify-content: center;
+  }
+  .column__one {
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: $screen-medium) {
+    &--link {
+      .aconstruir {
+        width: 60px;
+      }
+      img {
+        height: auto;
+        width: 130px;
+      }
+    }
+  }
+  @media screen and (min-width: 1020px) {
+    &--link {
+      .aconstruir {
+        width: 50px;
+      }
+      img {
+        width: 100px;
+      }
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .container {
+      flex-direction: row;
+    }
+    .column__one {
+      margin-bottom: 0;
+    }
+    &--title {
+      margin: 0 40px 0 0;
+    }
+    &--container {
+      flex-direction: row;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &--link {
+      margin-right: 85px;
+    }
+  }
+  @media screen and (min-width: $screen-large) {
+    margin: 0;
+    border-top: none;
+    border-bottom: none;
+    padding: 25px 50px;
+  }
+}

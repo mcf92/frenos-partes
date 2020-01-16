@@ -1,0 +1,101 @@
+/*------------------------------------*\
+   PADDING
+\*------------------------------------*/
+
+%vertical-padding {
+  padding: 10px 0;
+}
+
+%horizontal-padding {
+  padding: 0 10px;
+}
+
+$padding-custom: (
+  "without" :  0px,
+  "nano" :     2px,
+  "micro" :    5px,
+  "small" :    10px,
+  "medium" :   20px,
+  "large" :    40px,
+);
+
+$padding-size : (
+  "0"  :             0px,
+  "10" :             10px,
+  "15" :             15px,
+  "20" :             20px,
+  "25" :             25px,
+  "30" :             30px,
+  "35" :             35px,
+  "40" :             40px,
+  "45" :             45px,
+  "50" :             50px,
+  "55" :             55px,
+  "60" :             60px,
+  "65" :             65px,
+  "70" :             70px,
+  "75" :             75px,
+  "80" :             80px,
+  "85" :             85px,
+  "90" :             90px,
+  "95" :             95px,
+  "100" :            100px,
+);
+
+@each $name, $value in $padding-custom{
+    //Css class
+    #{$css-class}padding--#{$name} {
+      padding: $value;
+    };
+  //silent class
+    @if $use-silent-classes == true {
+      #{$silent-class}padding--#{$name} {
+        padding: $value;
+      };
+   };
+};
+
+@each $name in $directions-breakpoints {
+  @each $size, $value in $padding-custom {
+      //Css class
+      #{$css-class}padding--#{$name}-#{$size}{
+        padding-#{$name}: $value;
+      };
+      //silent class
+      @if $use-silent-classes == true {
+        #{$silent-class}padding--#{$name}-#{$size}{
+          padding-#{$name}: $value;
+        };
+      };
+    };
+};
+
+@each $name in $directions-breakpoints {
+  @each $size, $value in $padding-size {
+      //Css class
+      #{$css-class}padding--#{$name}-#{$size}{
+        padding-#{$name}: $value;
+      };
+      //silent class
+      @if $use-silent-classes == true {
+        #{$silent-class}padding--#{$name}-#{$size}{
+          padding-#{$name}: $value;
+        };
+      };
+    };
+};
+
+@media screen and (max-width: 991px) {
+  .padding-top-without_xs {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: $screen-large) {
+  .padding-top-20_lg {
+    padding-top: 20px;
+  }
+  .padding-top-40_lg {
+    padding-top: 40px;
+  }
+}

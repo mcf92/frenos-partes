@@ -1,0 +1,15 @@
+include ./source/mixin/head.pug
+
+doctype html
+html
+  +head('Frenos & Partes - Repuestos', 'En Frenos Y Partes podrás encontrar los mejores repuestos y de la mejor calidad para tus vehículos')
+  body.products.products--body
+    .container-fluid.padding--without
+      include ./source/includes/shared/loader.pug
+      include ./source/includes/navbar.pug
+      include ./source/includes/products/landing.pug
+      include ./source/includes/products/products.pug
+      include ./source/includes/shared/contact-form.pug
+      include ./source/includes/shared/footer.pug
+    script(src="index.js")
+    script(src="./source/js/products.js")

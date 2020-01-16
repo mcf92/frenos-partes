@@ -1,0 +1,22 @@
+.platform {
+  img {
+    width: 70%;
+  }
+  &-title {
+    transform: translateY(44%);
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  @media screen and (min-width: $screen-medium) {
+    img {
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: $screen-large) {
+    h3 {
+      font-size: 1.75rem;
+    }
+  }
+}

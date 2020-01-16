@@ -1,0 +1,35 @@
+.contact-form.container-fluid.padding--bottom-large
+  img#contactus(src="source/img/logo-icon.png" alt="Frenos Y Partes logo" class="contact-form_logo")
+  include ./contact-form-success.pug
+  include ./contact-form-error.pug
+  .contact-form_content.form-body
+    h3.text-color_white.montserrat-font-family.text-align_center Contáctanos
+    p.text-color_white.text-font-size_18.text-align_center Para mayor información sobre servicios y productos no dudes contactarnos
+    form#contact-form
+      .form-row
+        .col-md-12.margin--bottom-large.form-group
+          span.text-color_white.material-icons person
+          input.form-control#name(type='text' required='')
+          span.form-control-placeholder.text-color_white(for='name') Nombre
+        .col-md-12.margin--bottom-large.form-group
+          span.text-color_white.material-icons local_phone
+          input.form-control#phone(type='number' required='')
+          span.form-control-placeholder.text-color_white(for='phone') Teléfono
+        .col-md-12.margin--bottom-large.form-group
+          span.text-color_white.material-icons mail
+          input.form-control#email(type='email' data-parsley-trigger="change" required='')
+          span.form-control-placeholder.text-color_white(for='email') Email
+        .col-md-12.margin--bottom-large
+          label.text-color_white.text-font-size_14.text-weight_thin En cual de nuestros servicios esta interesado?
+          .form-custom-select
+            select(required="")
+              option(value="") Selecciona una opción
+              option(value="plataforma web") Plataforma web
+              option(value="planes") Planes
+              option(value="mantenimiento correctivo") Mantenimiento Correctivo
+              option(value="mantenimiento preventivo") Mantenimiento Preventivo
+              option(value="venta de respuestos") venta De Respuestos
+              option(value="Servicio de desvares") Servicio De Desvares
+            span.select-icon.text-color_white.material-icons keyboard_arrow_down
+      #recaptcha.g-recaptcha
+      button.btn__color-secondary.btn__full-width#theSubmitBtn(type='submit' value="validate") Enviar

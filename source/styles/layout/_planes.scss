@@ -1,0 +1,41 @@
+.planes {
+  &__card {
+    padding: 50px 40px;
+    text-align: center;
+    background: $white;
+    border-radius: 4px 0 0 4px;
+    &-secondary {
+      background-color: $secondary-color;
+      border-radius: 0 4px 4px 0;
+    }
+  }
+  &_banner {
+    padding: 110px 54px 0 54px;
+    font-family: 'Montserrat', sans-serif;
+    background-size: cover;
+    color: $white;
+    background: radial-gradient(circle at left bottom, #041c2b 0%, #0d466b 70%) no-repeat !important;
+    text-align: center;
+    h1 {
+      font-size: 30px;
+      color: #ffff;
+    }
+
+    h6 {
+      font-weight: 200;
+    }
+
+    @media screen and (min-width: $screen-small) {
+      h1 {
+        font-size: 30px;
+      }
+    }
+    @media screen and (min-width: $screen-large) {
+      padding: 0 122px;
+      padding: 110px 122px 0 122px;
+      h1 {
+        font-size: 44px;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.primary-color-text {
+  color: $primary-color;
+}
+
+.text-color_secondary {
+  color: $secondary-color;
+}
+
+.text-color_grey {
+  color: $grey;
+}
+
+.text-color_grey-light {
+  color: $grey-light;
+}
+
+.text-color_white {
+  color: $white;
+}
+
+.text-color_black {
+  color: $black;
+}
+
+.montserrat-font-family {
+  font-family: $font-family-serif;
+}
+
+.lato-font-family {
+  font-family: $font-family-lato;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-align_center {
+  text-align: center;
+}
+
+.text-font-size_18 {
+  font-size: $font-size-h4;
+}
+
+.text-font-size_14 {
+  font-size: $font-size-h5;
+}
+
+.text-font-size_12 {
+  font-size: $font-size-h6;
+}
+
+.text-weight_thin {
+  font-weight: 100;
+}

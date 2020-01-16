@@ -1,0 +1,42 @@
+.services-maintenance {
+  background-color: $white;
+  h3 {
+    margin-top: 0px;
+  }
+  .description {
+    transform: translateY(0%);
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .types {
+    padding: 0;
+  }
+  .card {
+    margin-top: 0;
+    margin-bottom: 25px;
+    @media screen and (min-width: $screen-large) {
+      min-height: 284px;
+    }
+    h5 {
+      font-size: 14px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: $screen-large) {
+    .description {
+      padding: 0 40px 40px;
+      transform: translateY(30%);
+      margin-bottom: 0;
+    }
+    .types {
+      padding: 40px;
+    }
+    .card {
+      h5 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

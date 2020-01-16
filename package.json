@@ -1,14 +1,15 @@
 {
-  "name": "parcel-example",
+  "name": "frenos-partes",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:camilaFarelo/parcel-example.git"
+    "url": "git@github.com:mcf92/frenos-partes.git"
   },
   "scripts": {
-    "start": "parcel index.pug",
+    "build": "parcel build index.pug aboutUs.pug platform.pug planes.pug products.pug --public-url ./",
+    "start": "parcel index.pug aboutUs.pug platform.pug planes.pug products.pug",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,17 +17,26 @@
   "license": "ISC",
   "dependencies": {
     "animate.css": "^3.6.1",
+    "aos": "^3.0.0-beta.6",
     "autoprefixer": "^9.0.1",
-    "bootstrap": "^4.1.2",
-    "bootstrap-sass": "^3.3.7",
-    "jquery": "^3.3.1",
-    "node-sass": "^4.9.2",
-    "popper.js": "^1.14.3",
+    "bootstrap": ">=4.3.1",
+    "bootstrap-sass": ">=3.4.1",
+    "custom-select": "^1.1.15",
+    "is-in-viewport": "^3.0.4",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.4.1",
+    "jquery-smooth-scroll": "^2.2.0",
+    "material-icons": "^0.2.3",
+    "node-sass": "^4.12.0",
+    "owl.carousel": "^2.3.4",
+    "parsleyjs": "^2.8.1",
+    "popper.js": "^1.15.0",
     "postcss-modules": "^1.3.0",
     "source": "0.0.3"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.9.7",
-    "pug": "^2.0.3"
+    "parcel-bundler": "^1.12.3",
+    "pug": "^2.0.3",
+    "sass": "^1.23.0"
   }
 }

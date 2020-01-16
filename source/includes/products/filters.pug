@@ -1,0 +1,20 @@
+.products--filter
+  .container
+    .row
+      .products--filter-search.col-6.col-sm-8.col-md-8.col-lg-8
+        span.material-icons.text-color_grey-light search
+        input.products--filter-search-input.quicksearch( type="text" placeholder="Buscar")
+      .form-custom-select.col-6.col-sm-4.col-md-4.col-lg-4
+        label.custom-select--label Categoria
+        select.form-control.filters-select
+          option(value="*") Todas Las Categorias
+          option(value=".frenosDeAire") Frenos De Aire
+          option(value=".frenosLiquidos") Frenos Liquidos
+          option(value=".sistemaDeRodamiento") sistema De Rodamiento
+          option(value=".sistemaDeDireccion") sistema De Direccion
+          option(value=".sistemaDeSuspension") sistema De Suspension
+          option(value=".sistemaElectronico") sistema De Electronico
+          option(value=".sistemaMotor") sistema De Motor
+          option(value=".sistemaDeEmbrague") sistema De Embrague
+          option(value=".otros") otros
+        span.select-icon.material-icons keyboard_arrow_down

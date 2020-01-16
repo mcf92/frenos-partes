@@ -1,2 +1,47 @@
 section.home_banner
-  h1 Soluciones integrales <br/> al Parque automotor
+  .container
+    h1 Soluciones integrales <br/> al Parque automotor
+      hr
+include ./../../includes/shared/clients.pug
+.position-relative
+  button.home-services_next-btn.btn-rounded-icon_outline-white.position-absolute
+    span.material-icons arrow_forward
+  .home-services.home-services_owl-carousel.owl-carousel.owl-theme#services
+    .home-services_item.option-1.flip-container
+      .flipper
+        .front
+          h2.service(data-aos='zoom-in') Servicio <br/> <b>24/7</b>
+            hr.service(data-aos='zoom-in')
+        .back.bg--primary-color--dark
+          h5.margin--bottom-small Servicio 24/7
+          p.text-weight_thin.montserrat-font-family Para tu mayor comodidad, trabajamos los 7 días de las semanas en jordana diurna. Estamos en la capacidad de cumplir con campañas de mantenimientos nocturnas dependiendo del volumen de la operación.
+    .home-services_item.option-2.flip-container
+      .flipper
+        .front
+          h2.service(data-aos='zoom-in' data-aos-delay='100') Venta de <br/> <b>Repuestos</b>
+            hr.service(data-aos='zoom-in' data-aos-delay='100')
+        .back.bg--primary-color--dark
+          h5.margin--bottom-small Venta de respuestos
+          p.text-weight_thin.montserrat-font-family Dentro de nuestro amplio portafolio de productos, manejamos un inventario que satisface las necesidades de todos los sistemas que componen un vehículo. Cotiza con nosotros!
+    .home-services_item.option-3.flip-container
+      .flipper
+        .front
+          h2.service(data-aos='zoom-in' data-aos-delay='200') Servicio de <br/> <b>Mantenimiento</b>
+            hr.service(data-aos='zoom-in' data-aos-delay='200')
+        .back.bg--primary-color--dark
+          h5.margin--bottom-small Servicio de Mantenimiento
+          p.text-weight_thin.montserrat-font-family Apoyamos tu operación de distribución, contamos con el capital humano y la infraestructura para realizar los mantenimientos pertinentes a tu flota vehicular.
+    .home-services_item.option-4.flip-container
+      .flipper
+        .front
+          h2.service(data-aos='zoom-in' data-aos-delay='300') Servicio de <br/> <b>Desvares</b>
+            hr.service(data-aos='zoom-in' data-aos-delay='300')
+        .back.bg--primary-color--dark
+          h5.margin--bottom-small Servicio de desvares
+          p.text-weight_thin.montserrat-font-family ¡No te quedes sin la ayuda! Brindamos el servicio de desvare para nuestros aliados...
+          p.montserrat-font-family Contactanos y pregunta por nuestro plan aliados.
+include ./../../includes/home/maintenance.pug
+include ./../../includes/home/platform.pug
+include ./../../includes/home/repair.pug
+include ./../../includes/shared/contact-form.pug
+include ./../../includes/shared/footer.pug

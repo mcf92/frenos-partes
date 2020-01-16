@@ -1,0 +1,110 @@
+.products {
+  &--banner {
+    text-align: center;
+    padding: 150px 0 55px 0;
+    background: $gradient-background;
+    color: $white;
+  }
+  &--list {
+    max-width: 925px;
+    margin: 0 auto;
+  }
+  &--filter {
+    background-color: $white;
+    border: 1px solid #cccccc2e;
+    border-radius: 40px;
+    margin: -24px 20px 40px 20px;
+    height: 55px;
+    padding: 5px 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    @media screen and (min-width: $screen-large) {
+      margin: -24px 0 40px;
+    }
+    &-search {
+      span {
+        position: absolute;
+        top: 11px;
+      }
+      &-input {
+        border: none;
+        width: 100%;
+        outline: none;
+        height: 100%;
+        padding-left: 30px;
+      }
+    }
+    .custom-select {
+      &--label {
+        color: $grey-light;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin: 0;
+      }
+      &-opener {
+        background-color: transparent;
+        padding: 0;
+        color: $dark;
+        outline: none;
+        span {
+          width: 119px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: inline-block;
+          @media screen and (min-width: $screen-small) {
+            width: 119px;
+          }
+          @media screen and (min-width: $screen-large) {
+            width: 100%;
+          }
+        }
+      }
+      &-panel {
+        margin-top: 1px;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        background-color: $white;
+      }
+      &-option {
+        cursor: pointer;
+      }
+    }
+    .custom-select-option.has-focus {
+      background-color: $secondary-color;
+    }
+    .custom-select-option.is-selected::before {
+      content: "";
+      padding: 0;
+    }
+    .form-custom-select {
+      position: relative;
+      border-left: 1px solid $grey-light;
+      .select-icon {
+        right: 0px;
+        bottom: 5px;
+        cursor: pointer;
+        position: absolute;
+        color: $secondary-color;
+      }
+    }
+  }
+  .navbar {
+    background: transparent;
+  }
+
+  .grid-item {
+    width: 100%;
+    @media screen and (min-width: $screen-small) {
+      width: 50%;
+    }
+    @media screen and (min-width: $screen-medium) {
+      width: 33.3333333333%;
+    }
+    @media screen and (min-width: $screen-large) {
+      width: 25%;
+    }
+  }
+  .card {
+    min-height: 335px;
+  }
+
+}

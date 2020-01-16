@@ -1,17 +1,29 @@
 header
-  nav#navbar
-    a
-      img(src="./source/img/logo.png").logo
-    ul.nav.navbar-nav.navbar-right
-      li
-        a Home
-      li
-        a Conócenos
-      li
-        a Servicios
-      li
-        a Productos
-      li
-        a Cotización
-      li
-        a Contactanos
+  nav.navbar
+    .navbar__container.container
+      a.navbar__brand(href='index.pug')
+        img(src="./source/img/logo.png")
+      .navbar__menu
+        .navbar__menu-toggle#menu-toggle
+          .navbar__menu-icon
+            .bar
+            .bar
+            .bar
+        ul.navbar__list.flex--1
+          li.navbar__list-item
+            a.nav-link.index(href='index.pug')
+              | Home
+              span.sr-only (current)
+          li.navbar__list-item
+            a.nav-link.aboutUs(href='aboutUs.pug') Conócenos
+          li.navbar__list-item
+            a.nav-link.services(href='index.pug#services') Servicios
+          li.navbar__list-item
+            a.nav-link.products(href='products.pug') Productos
+          li.navbar__list-item
+            a.nav-link.planes(href='planes.pug') Planes
+          li.navbar__list-item
+            a.nav-link.cantact-us(href='index.pug#contactus') Contáctanos
+          li.navbar__list-item.nav-item--icon
+            a.nav-link.cantact-us(href='https://portal.frenosypartesapp.com/')
+              span Login

@@ -1,0 +1,14 @@
+mixin head(title, description)
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="description" content=description)
+    link(rel="shortcut icon" href="source/img/logo-icon.png" type="image/x-icon")
+    title=title
+    link(rel='stylesheet', href='node_modules/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='node_modules/custom-select/build/custom-select.css')
+    link(rel='stylesheet', href='index.scss')
+    link(rel='stylesheet', href='node_modules/aos/dist/aos.css')
+    link(rel='stylesheet', href='node_modules/owl.carousel/dist/assets/owl.carousel.min.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900')
+    script(src="https://www.google.com/recaptcha/api.js?&render=explicit")

@@ -1,0 +1,66 @@
+.about-us {
+  .navbar {
+    background: radial-gradient(circle at left bottom, #041c2b 20%, #0d466b 50%) no-repeat !important;
+  }
+  &-home {
+    padding-top: 117px;
+    text-align: center;
+    .description {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: $screen-large) {
+      padding-left: 0;
+      padding-top: 125px;
+      .description {
+        text-align: left;
+        margin-left: -50px;
+        margin-bottom: 0;
+        h1 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 20px
+        }
+      }
+    }
+  }
+}
+
+.our-history {
+  background-color: $grey-background;
+  .description {
+    padding: 50px 25px;
+  }
+  &-bg {
+    background-position-x: 47%;
+    background-image: url('source/img/aboutUs/about-us-bg.png');
+    background-size: cover;
+    height: 50vh;
+    min-height: 495px;
+    hr {
+      border-top: 6px solid $secondary-color;
+      width: 138px;
+    }
+  }
+  @media screen and (min-width: $screen-large) {
+    .description {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px 25px;
+    }
+  }
+}
+
+.philoshophy {
+  max-width: 700px;
+  padding: 50px 25px;
+  h2 {
+    color: $secondary-color;
+  }
+  p {
+    font-size: 14px;
+  }
+  @media screen and (min-width: $screen-large) {
+    padding: 50px 0;
+  }
+}

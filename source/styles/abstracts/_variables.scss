@@ -1,0 +1,54 @@
+/*
+*  Set $use-silent-classes true to generate silent classes of the normal css classes
+*  Set $use-silent-classes false if you don't want to generate silent classes of the normal css classes
+*/
+$use-silent-classes:               true;
+//Type class
+$silent-class:                     "%";
+$css-class:                        ".";
+
+$primary-color: #0D486D;
+$secondary-color: #ED3E4B;
+$primary-color-hover: #BB2331;
+$secondary-color-hover: #bd303b;
+$primary-color-dark: #041c2b;
+$dark: #222222;
+$white: #FFF;
+$grey: #767676;
+$grey-light: #ABABAB;
+$grey-background: #f9f9f9;
+$gradient-background: radial-gradient(circle at left bottom, #041c2b 0%, #0d466b 70%) no-repeat !important;
+
+// Media Queries and grid settings
+
+$screen-extra-small:              	480px!default;
+$screen-small:                    	576px!default;
+$screen-medium:                   	768px!default;
+$screen-large:                    	992px!default;
+$screen-extra-large:              	2000px!default;
+
+// Typography
+$font-family-sans-serif:            "Roboto", sans-serif;
+$font-family-serif:                 "Montserrat", sans-serif;
+$font-family-lato:                  "Lato", sans-serif;
+
+$font-size-h1:                      36px;
+$font-size-h2:                      30px;
+$font-size-h3:                      28px;
+$font-size-h4:                      18px;
+$font-size-h5:                      14px;
+$font-size-h6:                      12px;
+
+//directions
+$directions-breakpoints :          ('top', 'bottom', 'left', 'right');
+$directions-y-breakpoints :        ('top', 'bottom');
+$directions-x-breakpoints :        ('left', 'right');
+
+//Margin
+$margin-base:                      40px;
+//Border
+$border-none:                      0px;
+$border-base-radius:               4px;
+
+$icon-font-path: "node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+$material-icons-font-path: 'node_modules/material-icons/iconfont/';
