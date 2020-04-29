@@ -24,7 +24,7 @@
     "custom-select": "^1.1.15",
     "is-in-viewport": "^3.0.4",
     "isotope-layout": "^3.0.6",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-smooth-scroll": "^2.2.0",
     "material-icons": "^0.2.3",
     "node-sass": "^4.12.0",
